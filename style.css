@@ -1,0 +1,166 @@
+body{
+    background-color: #0A0C1B;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.background{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-page{
+    background: #1C1938;
+    width: 560px;
+    padding: 20px;
+    height: 380px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.right-page{
+    position: relative;
+    height: 318px;
+    width: 580px;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    overflow: hidden;
+    background: #A667D2;
+    background: linear-gradient(#7c3737cb, #8a1e8abb), url(image-header-desktop.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.left-page h1{
+    font-size: 40px;
+    margin: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+}
+span{
+    color: #A667D2;
+}
+.text{
+    margin-top: -12px;
+    width: 75%;
+    font-size: 18px;
+    margin-left: 7%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #828098;
+
+}
+.company{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20%;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.templates{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 22%;
+    margin-top: -40px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #828098;
+    font-weight: bold;
+}
+
+@media(max-width: 978px){
+    .background{
+        width: 920px;
+    }
+    .left-page{
+        height: 450px;
+    }
+    .right-page{
+        height: 389px;
+    }
+    .left-page h1{
+        width: 70%;
+    }
+}
+@media(max-width: 800px){
+    .background{
+        width: 784px;
+    }
+    .left-page{
+        width: 730px;
+    }
+}
+@media(max-width: 500px){
+    .background{
+      width: 420px;
+      display: flex;
+      flex-direction: column-reverse;  
+      position: relative;
+      top: 150px;
+      left: 10px; 
+    }
+    .left-page{
+       width: 300px;
+       display: flex;
+       height: 520px;
+       border-radius: 0;
+       flex-direction: column 
+    }
+    .left-page h1{
+       font-size: 30px;
+       margin-top: -5px;
+       text-align: center;
+       width: 100%;
+       margin: 0;
+    }
+    .right-page{
+        border-radius: 0;
+        width: 340px;
+        height: 150px;
+    }
+    .left-page p{
+        margin-top: 20px;
+        text-align: center;
+        width: 100%; 
+        color: #efefef;
+        margin-left: 0;
+    }
+    .flex{
+        position: relative;
+        left: 25px;
+    }
+    .company{
+        display: flex;
+        flex-direction: column;
+    }
+    .company h3{
+        text-align: center;
+        font-size: 25px;
+    }
+    .templates{
+        display: flex;
+        flex-direction: column;
+        position:  relative;
+        bottom: 160px;
+    }
+    .templates p{
+        font-size: 15px;
+        color: #828098;
+        padding-bottom: 28px;
+    }
+
+}
+@media(max-width: 412px){
+    body{
+        height: 980px;
+    }
+    .background{
+        position: absolute;
+        top: 0px;
+        height: 780px;
+    }
+}
